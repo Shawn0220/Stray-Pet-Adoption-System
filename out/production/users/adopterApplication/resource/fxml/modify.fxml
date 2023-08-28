@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adopterApplication.Controllers.modifyController">
+   <children>
+      <Button fx:id="uploadPhoto" layoutX="40.0" layoutY="50.0" mnemonicParsing="false" onAction="#uploadPhotoOnClick" prefHeight="50.0" prefWidth="200.0" text="更换图片" />
+      <ImageView fx:id="petPhoto" fitHeight="300.0" fitWidth="460.0" layoutX="40.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="submit" layoutX="400.0" layoutY="486.0" mnemonicParsing="false" onAction="#submitOnClick" prefHeight="50.0" prefWidth="200.0" text="提交" />
+      <Button fx:id="cancel" layoutX="826.0" layoutY="506.0" mnemonicParsing="false" onAction="#cancelOnClick" prefHeight="30.0" prefWidth="137.0" text="返回" />
+      <Label alignment="CENTER" contentDisplay="CENTER" prefHeight="50.0" prefWidth="1000.0" styleClass="titleLabel" text="修改" textAlignment="CENTER" />
+      <Label layoutX="554.0" layoutY="60.0" prefHeight="40.0" prefWidth="100.0" text="宠物名称 : " />
+      <Label layoutX="554.0" layoutY="160.0" prefHeight="40.0" prefWidth="100.0" text="宠物性别：" />
+      <Label layoutX="554.0" layoutY="110.0" prefHeight="40.0" prefWidth="100.0" text="宠物类别" />
+      <Label layoutX="554.0" layoutY="210.0" prefHeight="40.0" prefWidth="100.0" text="体重：" />
+      <TextField fx:id="petName" layoutX="654.0" layoutY="60.0" prefHeight="40.0" prefWidth="319.0" />
+      <TextField fx:id="petType" layoutX="654.0" layoutY="110.0" prefHeight="40.0" prefWidth="319.0" />
+      <TextArea fx:id="introduction" layoutX="654.0" layoutY="260.0" maxHeight="100.0" maxWidth="319.0" minHeight="100.0" minWidth="319.0" prefColumnCount="20" prefHeight="100.0" prefWidth="319.0" wrapText="true" />
+      <Label layoutX="554.0" layoutY="260.0" prefHeight="40.0" prefWidth="100.0" text="状态描述：" />
+      <TextField fx:id="petWeight" layoutX="654.0" layoutY="210.0" prefHeight="40.0" prefWidth="319.0" />
+      <CheckBox fx:id="sexMale" layoutX="654.0" layoutY="170.0" mnemonicParsing="false" onAction="#sexMaleOnclick" text="雄" />
+      <CheckBox fx:id="sexFemale" layoutX="771.0" layoutY="170.0" mnemonicParsing="false" onAction="#sexFemaleOnClick" text="雌" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adopterApplication.Controllers.introductionController">
+   <children>
+      <Label alignment="CENTER" prefHeight="60.0" prefWidth="1000.0" styleClass="titleLabel" text="宠物详情" textAlignment="CENTER" />
+      <Label layoutX="35.0" layoutY="70.0" prefHeight="40.0" prefWidth="100.0" text="宠物名称:" />
+      <ImageView fx:id="goodsImage" fitHeight="300.0" fitWidth="460.0" layoutX="35.0" layoutY="220.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="630.0" layoutY="70.0" prefHeight="40.0" prefWidth="100.0" text="宠物性别:" />
+      <TextArea fx:id="introduction" editable="false" layoutX="630.0" layoutY="272.0" prefHeight="133.0" prefWidth="330.0" wrapText="true" />
+      <Label layoutX="630.0" layoutY="170.0" prefHeight="40.0" prefWidth="100.0" text="宠物类别:" />
+      <Button fx:id="adoptIt" layoutX="860.0" layoutY="480.0" mnemonicParsing="false" onAction="#adoptItOnClick" prefHeight="40.0" prefWidth="100.0" text="领养" />
+      <Label layoutX="35.0" layoutY="120.0" prefHeight="40.0" prefWidth="100.0" text="志愿者 ID :" />
+      <TextField fx:id="petName" editable="false" layoutX="180.0" layoutY="70.0" prefHeight="40.0" prefWidth="320.0" />
+      <TextField fx:id="volunteerID" editable="false" layoutX="180.0" layoutY="120.0" prefHeight="40.0" prefWidth="320.0" />
+      <TextField fx:id="perSex" editable="false" layoutX="760.0" layoutY="70.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label layoutX="630.0" layoutY="120.0" prefHeight="40.0" prefWidth="100.0" text="体重:" />
+      <TextField fx:id="petType" editable="false" layoutX="760.0" layoutY="170.0" prefHeight="40.0" prefWidth="200.0" />
+      <Label layoutX="35.0" layoutY="170.0" prefHeight="40.0" prefWidth="100.0" text="志愿者姓名:" />
+      <TextField fx:id="volunteerName" editable="false" layoutX="180.0" layoutY="170.0" prefHeight="40.0" prefWidth="320.0" />
+      <Button fx:id="cancel" layoutX="745.0" layoutY="480.0" mnemonicParsing="false" onAction="#cancelOnClick" prefHeight="40.0" prefWidth="100.0" text="返回" />
+      <TextField fx:id="petWeight" editable="false" layoutX="760.0" layoutY="120.0" prefHeight="40.0" prefWidth="200.0" />
+      <Button fx:id="modify" layoutX="630.0" layoutY="480.0" mnemonicParsing="false" onAction="#modifyOnClick" prefHeight="40.0" prefWidth="100.0" text="修改" />
+      <TextField fx:id="failReason" editable="false" layoutX="630.0" layoutY="413.0" prefHeight="40.0" prefWidth="330.0" />
+      <Label layoutX="630.0" layoutY="220.0" prefHeight="40.0" prefWidth="100.0" text="领养状态：" />
+      <TextField fx:id="petApdated" editable="false" layoutX="760.0" layoutY="220.0" prefHeight="40.0" prefWidth="200.0" />
+      <Button fx:id="pass" layoutX="516.0" layoutY="480.0" mnemonicParsing="false" onAction="#passOnClick" prefHeight="40.0" prefWidth="100.0" text="通过" />
+   </children>
+</AnchorPane>

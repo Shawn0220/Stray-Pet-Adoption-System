@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="550.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="adopterApplication.Controllers.distributionController">
+   <children>
+      <Button fx:id="uploadPhoto" layoutX="40.0" layoutY="50.0" mnemonicParsing="false" onAction="#uploadPhotoOnClick" prefHeight="50.0" prefWidth="200.0" text="上传图片" />
+      <ImageView fx:id="goodsPhoto" fitHeight="300.0" fitWidth="460.0" layoutX="40.0" layoutY="120.0" pickOnBounds="true" preserveRatio="true" />
+      <Label layoutX="544.0" layoutY="50.0" prefHeight="40.0" prefWidth="100.0" text="宠物名称 : " />
+      <Label layoutX="544.0" layoutY="150.0" prefHeight="40.0" prefWidth="100.0" text="宠物性别：" />
+      <Label layoutX="544.0" layoutY="100.0" prefHeight="40.0" prefWidth="100.0" text="宠物类别" />
+      <Label layoutX="544.0" layoutY="200.0" prefHeight="40.0" prefWidth="100.0" text="体重：" />
+      <TextField fx:id="petName" layoutX="644.0" layoutY="50.0" prefHeight="40.0" prefWidth="319.0" />
+      <TextArea fx:id="introduction" layoutX="644.0" layoutY="250.0" maxHeight="100.0" maxWidth="319.0" minHeight="100.0" minWidth="319.0" prefColumnCount="20" prefHeight="100.0" prefWidth="319.0" wrapText="true" />
+      <Button fx:id="release" layoutX="400.0" layoutY="486.0" mnemonicParsing="false" onAction="#releaseOnClick" prefHeight="50.0" prefWidth="200.0" text="发布" />
+      <Button fx:id="refresh" layoutX="834.0" layoutY="506.0" mnemonicParsing="false" onAction="#refreshOnClick" prefHeight="30.0" prefWidth="129.0" text="清空页面" />
+      <Label alignment="CENTER" prefHeight="40.0" prefWidth="1000.0" styleClass="titleLabel" text="详情" />
+      <Label layoutX="544.0" layoutY="250.0" prefHeight="40.0" prefWidth="100.0" text="状态描述：" />
+      <TextField fx:id="petWeight" layoutX="644.0" layoutY="200.0" prefHeight="40.0" prefWidth="319.0" />
+      <CheckBox fx:id="sexMale" layoutX="644.0" layoutY="160.0" mnemonicParsing="false" onAction="#sexMaleOnclick" text="雄" />
+      <CheckBox fx:id="sexFemale" layoutX="761.0" layoutY="160.0" mnemonicParsing="false" onAction="#sexFemaleOnClick" text="雌" />
+      <ComboBox fx:id="petType" layoutX="644.0" layoutY="100.0" prefHeight="40.0" prefWidth="311.0" promptText="__请选择宠物的类别__" />
+   </children>
+</AnchorPane>
